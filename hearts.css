@@ -32,7 +32,7 @@ body {
     display: flex;
     gap: 20px;
     color: #444;
-   
+   max-width: 90vw;
 }
 
 .timer__item {
@@ -51,4 +51,15 @@ body {
 .timer__hours,
 .timer__days {
     color: aliceblue;
+}
+
+@media screen and (max-width: 768px) {
+    .timer__item {
+        font-size: 18px;
+        
+    }
+    .timer {
+        /* Переносим элементы таймера в колонку */
+        gap: 10px;
+    }
 }
